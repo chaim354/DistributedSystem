@@ -1,0 +1,60 @@
+Sep 18, 2022 8:38:20 PM edu.yu.cs.com3800.stage1.SimpleServerImpl <init>
+INFO: My first log
+Sep 18, 2022 8:38:20 PM edu.yu.cs.com3800.stage1.SimpleServerImpl start
+INFO: server starting
+Sep 18, 2022 8:38:20 PM edu.yu.cs.com3800.stage1.SimpleServerImpl$MyHandler handle
+INFO: request count: 1
+Sep 18, 2022 8:38:20 PM edu.yu.cs.com3800.stage1.SimpleServerImpl$MyHandler handle
+INFO: code response: belisimo we did it
+Sep 18, 2022 8:38:20 PM edu.yu.cs.com3800.stage1.SimpleServerImpl stop
+INFO: server stopping
+Sep 18, 2022 8:38:20 PM edu.yu.cs.com3800.stage1.SimpleServerImpl <init>
+INFO: My first log
+Sep 18, 2022 8:38:20 PM edu.yu.cs.com3800.stage1.SimpleServerImpl start
+INFO: server starting
+Sep 18, 2022 8:38:20 PM edu.yu.cs.com3800.stage1.SimpleServerImpl$MyHandler handle
+INFO: request count: 1
+Sep 18, 2022 8:38:20 PM edu.yu.cs.com3800.stage1.SimpleServerImpl$MyHandler handle
+WARNING: error encountered with request: 1 Could not create and run instance of class
+java.lang.ReflectiveOperationException: Could not create and run instance of class
+	at edu.yu.cs.com3800.JavaRunner.runClass(JavaRunner.java:156)
+	at edu.yu.cs.com3800.JavaRunner.compileAndRun(JavaRunner.java:70)
+	at edu.yu.cs.com3800.stage1.SimpleServerImpl$MyHandler.handle(SimpleServerImpl.java:100)
+	at jdk.httpserver/com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:95)
+	at jdk.httpserver/sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:82)
+	at jdk.httpserver/com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:98)
+	at jdk.httpserver/sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:733)
+	at jdk.httpserver/com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:95)
+	at jdk.httpserver/sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:700)
+	at jdk.httpserver/sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:159)
+	at jdk.httpserver/sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:447)
+	at jdk.httpserver/sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:413)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.NoSuchMethodException: Test.run()
+	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2675)
+	at edu.yu.cs.com3800.JavaRunner.runClass(JavaRunner.java:149)
+	... 12 more
+
+Sep 18, 2022 8:38:20 PM edu.yu.cs.com3800.stage1.SimpleServerImpl$MyHandler handle
+WARNING: code failed:Could not create and run instance of class
+java.lang.ReflectiveOperationException: Could not create and run instance of class
+	at edu.yu.cs.com3800.JavaRunner.runClass(JavaRunner.java:156)
+	at edu.yu.cs.com3800.JavaRunner.compileAndRun(JavaRunner.java:70)
+	at edu.yu.cs.com3800.stage1.SimpleServerImpl$MyHandler.handle(SimpleServerImpl.java:100)
+	at jdk.httpserver/com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:95)
+	at jdk.httpserver/sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:82)
+	at jdk.httpserver/com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:98)
+	at jdk.httpserver/sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:733)
+	at jdk.httpserver/com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:95)
+	at jdk.httpserver/sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:700)
+	at jdk.httpserver/sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:159)
+	at jdk.httpserver/sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:447)
+	at jdk.httpserver/sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:413)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.NoSuchMethodException: Test.run()
+	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2675)
+	at edu.yu.cs.com3800.JavaRunner.runClass(JavaRunner.java:149)
+	... 12 more
+
+Sep 18, 2022 8:38:20 PM edu.yu.cs.com3800.stage1.SimpleServerImpl stop
+INFO: server stopping
